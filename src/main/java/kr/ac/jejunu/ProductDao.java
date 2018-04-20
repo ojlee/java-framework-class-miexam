@@ -16,7 +16,7 @@ public class ProductDao {
         PreparedStatement preparedStatement =
                 connection.prepareStatement(
                         "SELECT * FROM product WHERE id = ?");
-        preparedStatement.setLong(1,id);
+        preparedStatement.setLong(1, id);
         //resultset
         ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
